@@ -38,14 +38,14 @@
 // | BT CLR | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10  | F11 | F12 | EFFECT REV |
 // |  BT 0   |   |  UP |   | HUEUP | SATUP | BRIUP | SPDUP |   |   | HOME | PGUP |    |           |
 // |  MO(1)   | LT |  DN  | RT | HUEDN | SATDN | BRIDN | SPDDN |  |INS| PGDN |     |  EFFECT FORW |
-// |    BT 1     |     |      |      |     |     |     |     |     | END | DEL |                  |
+// |   BT 1   | VOLDN | VOLUP | PLAY |     |     |     |     |     | END | DEL |                  |
 // |   BT 2  |      |      |             TOG RGB                | PRT SCR |       |       |       |
 // ------------------------------------------------------------------------------------------------
 			bindings = <
 	&bt BT_CLR   &kp F1    &kp F2    &kp F3  &kp F4           &kp F5          &kp F6          &kp F7          &kp F8   &kp F9   &kp F10  &kp F11 &kp F12  &rgb_ug RGB_EFR
 	&bt BT_SEL 0  &trans    &kp UP    &trans  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI  &trans   &trans   &kp HOME &kp PG_UP &trans        &trans 
 	&mo 1 &kp LEFT  &kp DOWN  &kp RIGHT &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD &trans   &trans   &kp INS  &kp PG_DN      &rgb_ug RGB_EFF
-	&bt BT_SEL 1    &trans    &trans    &trans   &trans          &trans          &trans          &trans          &trans   &kp END  &kp DEL                         &trans
+	&bt BT_SEL 1 &kp C_VOL_DN &kp C_VOL_UP &kp C_PP &trans          &trans          &trans          &trans          &trans   &kp END  &kp DEL                         &trans
 	&bt BT_SEL 2  &trans   &trans                            &rgb_ug RGB_TOG                                      &kp PSCRN      &trans       &trans               &trans
 			>;
 		};
